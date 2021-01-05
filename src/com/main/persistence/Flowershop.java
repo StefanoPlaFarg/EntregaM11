@@ -61,7 +61,7 @@ public class Flowershop {
 
 		}
 		
-		totalstock= "STOCK:"+ "/n" + "TREES: " + treestock + "/n" + "FLOWERS: " + flowerstock + "/n" + "DECORATION: "+ decorationstock ;
+		totalstock= "STOCK:"+ "\n" + "TREES: " + treestock + "\n" + "FLOWERS: " + flowerstock + "\n" + "DECORATION: "+ decorationstock ;
 		
 		
 		return totalstock;
