@@ -20,7 +20,7 @@ public class ItemFactory {
 
 	}
 	
-	public static Tree createFlower(double price, double height) {
+	public static Tree createTree(double price, double height) {
 
 		return new Tree(height, price);
 
