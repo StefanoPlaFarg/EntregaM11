@@ -4,7 +4,9 @@
 package com.main.persistence;
 
 import java.util.List;
-import java.util.Optional;
+
+import com.main.domain.Item;
+
 
 /**
  * @author stefano
@@ -12,13 +14,17 @@ import java.util.Optional;
  */
 public interface Dao<T> {
 
-    Optional<T> get(long id);
-    
-    List<T> getAll();
+    T get(int id);     
     
     void save(T t);
     
-    void update(T t, String[] params);
+    void update(T t, int id);
     
-    void delete(T t);
+    void delete(int i);
+    
+    List<T> getAll();
+    
+    void removeAll();
+  
+    
 }
