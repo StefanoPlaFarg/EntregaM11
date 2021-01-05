@@ -18,6 +18,7 @@ public class MainApp {
 	 */
 	public static void main(String[] args) {
 		
+		//creating the items
 		Controller controller = new Controller();
 		Scanner myObj = new Scanner(System.in);
 		
@@ -28,7 +29,11 @@ public class MainApp {
 			controller.createItem();
 		}
 		
-		controller.printStock();
+		//printing the stock
+		System.out.println("The stock is:");
+		System.out.println(controller.printStock());
+		
+		//deleting all items
 		controller.deleteAllItems();
 		
 
