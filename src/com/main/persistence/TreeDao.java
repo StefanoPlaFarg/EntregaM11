@@ -35,12 +35,12 @@ public class TreeDao implements Dao<Tree> {
 	}
 
 	@Override
-	public void update(Tree flower, int id) {
+	public void update(Tree tree, int id) {
 
 		if (treesList.get(id) != null) {
 
-			treesList.get(id).setPrice(flower.getPrice());
-			treesList.get(id).setHeight(flower.getHeight());
+			treesList.get(id).setPrice(tree.getPrice());
+			treesList.get(id).setHeight(tree.getHeight());
 
 		}
 
