@@ -97,6 +97,13 @@ public class Controller {
 		
 		return flowershop.getStock();
 	}
+	
+	
+	public void deleteAllItems() {
+		
+		flowershop.deleteRepositories();
+		
+	}
 
 }
 
