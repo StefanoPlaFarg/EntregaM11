@@ -68,4 +68,15 @@ public class Flowershop {
 	}
 	
 	
+	public void deleteRepositories() {
+		
+		flowerRepository.removeAll();
+		treeRepository.removeAll();
+		decorationRepository.removeAll();
+		
+		
+	}
+	
+	
+	
 }
