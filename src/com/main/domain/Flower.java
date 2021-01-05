@@ -19,6 +19,12 @@ public class Flower extends Item {
 		this();
 		this.colour=colour;		
 	}
+	
+	public Flower (String colour, double price) {
+		super(price);
+		this.colour=colour;	
+			
+	}
 
 	/**
 	 * @return the colour
