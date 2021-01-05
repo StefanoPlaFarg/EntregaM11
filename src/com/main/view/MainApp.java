@@ -32,6 +32,7 @@ public class MainApp {
 		//printing the stock
 		System.out.println("The stock is:");
 		System.out.println(controller.printStock());
+		System.out.println("Comment: Every number is the id corresponging to an item of the flowershop and is unique");
 		
 		//deleting all items
 		controller.deleteAllItems();
