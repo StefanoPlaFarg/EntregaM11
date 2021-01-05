@@ -9,17 +9,41 @@ package com.main.domain;
  */
 public class Decoration extends Item {
 	
-	private String[] listMaterials= {"wood","plastic"};
+	private static String[] listMaterials= {"wood","plastic"};
 	private String material;
 	
 	public Decoration() {
 		super();
 	}
 	
-	public Decoration (String material) throws Exception {
+	public Decoration (String material)  {
 		
-		  this.material=material;	
+		if (material.equals(listMaterials[0])||material.equals(listMaterials[1])) {
+			
+			 this.material=material;	
+		}else {
+			
+			System.out.println("Decoration created but this material is not possible. The assigned one has been wood by default");
+			this.material="wood";
+		}
+		
+		 
 								
+	}
+	
+	
+	public Decoration (String material, double price) {
+		super(price);
+		if (material.equals(listMaterials[0])||material.equals(listMaterials[1])) {
+			
+			 this.material=material;	
+		}else {
+			
+			System.out.println("Decoration created but this material is not possible. The assigned one has been wood by default");
+			this.material="wood";
+		}
+			
+			
 	}
 
 	/**
@@ -40,7 +64,15 @@ public class Decoration extends Item {
 	 * @param material the material to set
 	 */
 	public void setMaterial(String material) {
-		this.material = material;
+		if (material.equals(listMaterials[0])||material.equals(listMaterials[1])) {
+			
+			 this.material=material;	
+		}else {
+			
+			System.out.println("Decoration created but this material is not possible. The assigned one has been wood by default");
+			this.material="wood";
+		}
+			
 	}
 
 	
