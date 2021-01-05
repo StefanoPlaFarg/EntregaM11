@@ -20,6 +20,12 @@ public class Tree extends Item {
 		this.height=height;		
 	}
 	
+	
+	public Tree (double height, double price) {
+		super(price);
+		this.height=height;	
+			
+	}
 	/**
 	 * @return the height
 	 */
